@@ -1,0 +1,4 @@
+.env
+zenv
+*.egg-info
+__pycache__
