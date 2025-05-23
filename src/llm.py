@@ -1,4 +1,5 @@
 import os
+import requests
 from openai import OpenAI
 from src.prompt import system_instruction
 
@@ -7,8 +8,6 @@ client = OpenAI()
 messages = [
     {"role":"system","content":system_instruction}
 ]
-
-import requests
 
 def ask_order(messages, model_name="gpt-4.1-nano", max_tokens=10000, temperature=0.7):
     url = "https://api.euron.one/api/v1/euri/alpha/chat/completions"
