@@ -2,3 +2,4 @@
 zenv
 *.egg-info
 __pycache__
+*.ipynb
