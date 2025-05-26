@@ -2,6 +2,9 @@ import os
 import requests
 from openai import OpenAI
 from src.prompt import system_instruction
+from dotenv import load_dotenv
+
+load_dotenv()
 
 client = OpenAI()
 
